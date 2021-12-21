@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.container {
+  /* Background of the application is set here */
+  background: linear-gradient(
+    310deg,
+    rgba(15, 32, 39, 1) 30%,
+    rgba(32, 58, 67, 1) 60%,
+    rgba(44, 83, 100, 1) 90%
+  );
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+h2 {
+  padding-top: 30px;
+  color: white;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+p {
+  color: #ffffff;
+}
+
+/* Styling of Button */
+button {
+  /* Color */
+  background-color: #ffffff;
+  color: #ffffff;
+
+  /* Sizing */
+  padding: 10px 30px;
+  font-size: 16px;
+  margin-top: 20px;
+
+  /* Visual Appearence */
+  border: none;
+  text-align: center;
+  text-decoration: none;
+
+  /* Animation */
+  transition: ease-in-out 0.2s;
+}
+
+button p {
+  /* Linear gradient is applied to text */
+  background: -webkit-linear-gradient(
+    310deg,
+    rgba(15, 32, 39, 1) 30%,
+    rgba(32, 58, 67, 1) 60%,
+    rgba(44, 83, 100, 1) 90%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(54, 54, 54, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.15);
+  transition: ease-in-out 0.2s;
+  cursor: pointer;
+}
+
+.result:first-of-type {
+  margin-top: 20px;
+}
